@@ -1,0 +1,9 @@
+/* For manual image-replaced titles */
+=image-replaced
+{
+	display:block;
+	text-indent:-9999px;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	overflow:hidden;
+}

@@ -1,0 +1,23 @@
+=min-height(!h)
+{
+	// For good browsers
+    & { min-height:!h; }
+    
+    // For IE6
+    * html & 
+    {
+    	height:auto;
+    }
+}
+
+=min-width(!w)
+{
+	// For good browsers
+    & { min-width:!w; }
+    
+    // For IE6
+    * html & 
+    {
+    	width:auto;
+    }
+}

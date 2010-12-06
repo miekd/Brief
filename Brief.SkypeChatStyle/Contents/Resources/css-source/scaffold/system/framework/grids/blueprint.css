@@ -1,0 +1,29 @@
+/**
+ * Blueprint Grid
+ *
+ * The grid creates a Blueprint style grid, with 30px columns and 20px
+ * gutters on the right of the column. The container is different
+ * in that it doesn't include the gutters. So we remove the gutter-width
+ * from the total width of the container.
+ *
+ * Note: This doesn't create the same classes used in Blueprint. It
+ * just creates the same grid
+ */
+
+@grid
+{
+	column-width:30;
+	column-count:24;
+	left-gutter-width:0;
+	right-gutter-width:20;
+	baseline:18;
+	unit:px;
+}
+
+/**
+ * The Blueprint container class doesn't include gutters
+ */
+.container 
+{
+	width: #[!grid-width - !gutter-width]px;
+}

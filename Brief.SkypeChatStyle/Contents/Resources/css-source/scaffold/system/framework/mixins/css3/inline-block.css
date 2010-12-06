@@ -1,0 +1,15 @@
+/**
+* Inline-block
+*
+* Workaround to make the element behave as inline-block
+*
+* @type Mixin
+*/
+=inline-block
+{
+	zoom:1;
+	display:inline; 
+	display:-moz-inline-box; 
+	display:inline-block; 
+	vertical-align:top;
+}

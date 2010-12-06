@@ -1,0 +1,8 @@
+/**
+* Safari text shadow fix.
+*/
+=crisp
+{
+	text-shadow:rgba(0,0,0,0.01) 0 0 0;
+	-webkit-text-stroke:1px transparent;
+}

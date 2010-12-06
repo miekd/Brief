@@ -1,0 +1,71 @@
+/** 
+ * Incremental Leading 
+ *
+ * Every 4 lines of normal type, there are 5 lines of
+ * smaller type 
+ */
+=small-type
+{ 
+	line-height: #[floor(!baseline*4/5)]px; 
+	font-size: 11px; 
+}
+
+/**
+ * Resets the type back to normal
+ */
+=regular
+{
+	font-weight:normal;
+	font-style:normal;
+}
+
+
+/* Surround uppercase words and abbreviations with this class.
+Based on work by Jørgen Arnor Gårdsø Lom [http://twistedintellect.com/] */
+=all-caps
+{ 
+	font-variant: small-caps; 
+	letter-spacing: 1px; 
+	text-transform: lowercase; 
+	font-size:1.2em;
+	line-height:1%;
+	font-weight:bold;
+	padding:0 2px;
+}
+
+
+/* Give this to links you want to show more information */
+=link-info
+{
+	&[href^="http"]:after
+	{
+		margin:0 5px 0 0; font-family:"Zapf Dingbats"; content: "\279C";
+	}
+	
+	&[href$="pdf"]:after	{ content: " (pdf)"; }  
+	&[href$=".doc"]:after	{ content: " (doc)"; } 
+	&[href$=".zip"]:after	{ content: " (zip)"; } 
+}
+
+
+/* Drop Cap */
+=drop-cap
+{  
+	&:first-letter
+	{
+		+baskerville;
+		
+		display:block;  
+		margin:5px 0 0 5px;  
+		float:left;    
+		font-size:60px;   
+	}
+}
+
+/* For some nice Ampersands */
+=nice-amp 
+{ 
+  +warnock; 
+  font-style: italic;
+  font-weight: normal;
+}

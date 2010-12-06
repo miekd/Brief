@@ -1,0 +1,27 @@
+/**
+ * CSS3 Multi column layout
+ * @see http://www.css3.info/preview/multi-column-layout/
+ */
+=column-width(!width)
+{
+	-moz-column-width:!width;
+	-webkit-column-width:!width;
+}
+
+=column-count(!count)
+{
+	-moz-column-count:!count;
+	-webkit-column-count:!count;
+}
+
+=column-rule(!color, !style, !thickness)
+{
+	-moz-column-rule:!color !style !thickness;
+	-webkit-column-rule:!color !style !thickness;
+}
+
+=column-gap(!gap)
+{
+	-moz-column-gap:!gap;
+	-webkit-column-gap:!gap;
+}

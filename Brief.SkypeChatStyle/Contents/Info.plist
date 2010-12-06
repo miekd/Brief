@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleGetInfoString</key>
+	<string>Panamericana Chat Style</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.skype.skype.panamericana.style</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>1.0</string>
+	<key>CFBundleName</key>
+	<string>Panamericana</string>
+	<key>CFBundlePackageType</key>
+	<string>SKP1</string>
+	<key>CFBundleVersion</key>
+	<string>1.0</string>
+	<key>DefaultFontFamily</key>
+	<string>Helvetica Neue Light</string>
+	<key>DefaultFontSize</key>
+	<integer>11</integer>
+	<key>DisableCustomBackground</key>
+	<true/>
+	<key>MessageViewVersion</key>
+	<integer>6</integer>
+	<key>ShowsUserIcons</key>
+	<true/>
+	<key>FormattedCopyCompatible</key>
+	<false/>
+	<key>SupportsStoredRender</key>
+	<false/>
+</dict>
+</plist>

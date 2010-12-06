@@ -1,0 +1,25 @@
+<div class="item transfer in" id="%itemId%">
+	<div class="container">
+		<div class="head">
+			<span class="sender"><span class="profile" data-sender="%senderScreenName%"></span><img src="%userIconPath%" class="avatar" alt="" data-sender="%senderScreenName%" /><a href="%senderLinkURL%">%sender%</a></span>
+			<span class="time %transferHeadStatus%">%time%</span>
+		</div>
+		<div class="body">
+			<div class="main instance %transferStatus%">
+				<img class="icon" src="%transferType%" />
+				<button class="pill accept"><span>%acceptTransfer%</span></button>
+				<button class="pill decline"><span>%declineTransfer%</span></button>
+				<button class="cancel" title="%tooltipCancel%"></button>
+				<button class="quicklook" title="%tooltipQuicklook%"></button>
+				<button class="reveal" title="%tooltipReveal%"></button>
+				<span class="name">%name%</span>
+				<span class="progressbar">
+					<span class="total"></span>
+					<span class="progress"></span>
+				</span>
+				<span class="size">%size%</span>
+			</div>
+			%subTransfers%
+		</div>
+	</div>
+</div>

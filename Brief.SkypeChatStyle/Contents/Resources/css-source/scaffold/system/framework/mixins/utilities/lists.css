@@ -1,0 +1,48 @@
+/**
+* Horizontal List
+*
+* Turns a ul into a horizontal list, ready to be used as 
+* a menu.
+*
+* @type Mixin
+*/
+=horizontal-list
+{
+	+reset;
+  	+clearfix;
+	
+	li
+	{
+		+no-bullet;
+		+float(left);
+		white-space:nowrap;
+	}
+}
+
+/**
+* No Bullet
+*
+* Removes the bullet from the list element
+*
+* @type Mixin
+*/
+=no-bullet
+{
+	list-style-type:none;
+	margin-left:0;
+}
+
+/**
+* No bullets
+*
+* Turns off bullets for the entire ul
+*
+* @type Mixin
+*/
+=no-bullets
+{
+	li
+	{
+		+no-bullet;
+	}
+}

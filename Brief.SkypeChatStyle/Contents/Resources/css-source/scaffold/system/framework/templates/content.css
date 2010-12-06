@@ -1,0 +1,27 @@
+/**
+* Content Layout
+*
+* Based on Jason Santa Maria's Work on 24Ways. 
+* These aren't entirely semantic. But you don't want to 
+* fill up your CSS with id's for every figure.
+*
+* @section Content Layout
+* @see http://24ways.org/2008/making-modular-layout-systems
+* --------------------------------------------------------
+*/
+
+	.figure
+	{
+		+small-type;
+
+		overflow:hidden;
+		line-height:!baseline;
+		margin-bottom:!baseline;
+		
+		img 		{ float:left; margin:0 0 !baseline; width:100%; }
+		p  			{ clear:left; padding:0 !important; }
+	}
+	
+	.caption	{ float:left; padding:0 !important; +small-type; line-height:!baseline; }
+	.right 		{ float:right !important; margin-left:!baseline; }
+	.solo 		{margin-left:0 !important;margin-right:0 !important;}

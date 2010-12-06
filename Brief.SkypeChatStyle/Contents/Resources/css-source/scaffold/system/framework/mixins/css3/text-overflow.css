@@ -1,0 +1,11 @@
+
+/**
+ * Adds an ellipsis or clips the text 
+ * Options are "ellipsis" or "clip"
+ * @see http://www.css3.info/preview/text-overflow/
+ */
+=text-overflow(!type = "ellipsis")
+{
+	text-overflow:!type;
+	-o-text-overflow:!type;
+}

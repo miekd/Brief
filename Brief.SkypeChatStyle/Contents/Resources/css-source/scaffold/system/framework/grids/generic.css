@@ -1,0 +1,13 @@
+/**
+ * Create a generic grid. Fairly self-explanatory. This is required
+ * to use any of the layout plugins features.
+ */
+@grid
+{
+	column-width:60;
+	column-count:12;
+	left-gutter-width:10;
+	right-gutter-width:10;
+	baseline:20;
+	unit:px;
+}

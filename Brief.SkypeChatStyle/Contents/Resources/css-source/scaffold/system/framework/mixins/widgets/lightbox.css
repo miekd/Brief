@@ -1,0 +1,125 @@
+/**
+ * Lightbox
+ *
+ * Creates a lightbox without the need for JS. You need to use this markup for it to work:
+ *
+ * @code
+ * <ul id="lightboxes">
+ *    <li id="close"></li>
+ *    <li id="lightbox-about">
+ *        <div class="box">
+ *            <h3>About</h3>
+ *            <p>
+ *                Duis eros nibh, tempor sed ultricies eget, malesuada id nunc. Praesent a purus non 
+ *                risus dignissim placerat et eu dolor. Maecenas rutrum odio vitae libero sagittis a faucibus metus tincidunt. 
+ *                Praesent bibendum sagittis elit, nec convallis enim tincidunt quis.
+ *            </p>
+ *            <p>
+ *                Duis eros nibh, tempor sed ultricies eget, malesuada id nunc. Praesent a purus non 
+ *                risus dignissim placerat et eu dolor. Maecenas rutrum odio vitae libero sagittis a faucibus metus tincidunt. 
+ *                Praesent bibendum sagittis elit, nec convallis enim tincidunt quis.
+ *            </p>            
+ *            <a href="#close" class="close" title="close window">x</a>
+ *        </div>
+ *        
+ *        <!--[if IE]>
+ *        <div class="ie-bg"></div>          
+ *        <![endif]--> 
+ *    </li>
+ *    <li id="lightbox-more">
+ *        <div class="box">
+ *            <h3>More stuff</h3>
+ *            <p>
+ *                Duis eros nibh, tempor sed ultricies eget, malesuada id nunc. Praesent a purus non 
+ *                risus dignissim placerat et eu dolor. Maecenas rutrum odio vitae libero sagittis a faucibus metus tincidunt. 
+ *                Praesent bibendum sagittis elit, nec convallis enim tincidunt quis.
+ *            </p>
+ *            <a href="#close" class="close" title="close window">x</a>
+ *        </div>
+ *        
+ *        <!--[if IE]>
+ *        <div class="ie-bg"></div>          
+ *        <![endif]--> 
+ *    </li>
+ * </ul>
+ * @endcode
+ *
+ *
+ * Each list item is a different lightbox. Name them using the ID's. To show the lightboxes,
+ * just make links that point to that ID. eg. <a href="#lightbox-about">About Us</a>
+ *
+ * @author Based on work by Jenna Smith
+ * @see http://www.growldesign.co.uk/projects/lb/#close
+ * @copyright Copyright(c) 2009
+ */
+ 
+=lightbox
+{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	overflow: hidden;
+	text-align: left;
+	position: relative;
+	
+	li 
+	{
+		width: 100%;
+		height: 3000px;
+		position: relative;
+		background: rgba(0,0,0,.5);
+	}
+	
+	.lightbox-box 
+	{
+		position: absolute;
+		width: 400px;
+		height: 400px;
+		left: 50%;
+		top: 50px;
+		border: 10px solid #999;
+		margin-left: -230px;
+		background-color: #fff;
+		padding: 20px;
+		z-index: 1;
+	}	  
+	
+	#close 
+	{
+		background-color: transparent;
+		z-index: -1;
+	}
+	
+	a.close 
+	{
+		position: absolute;
+		top: 20px;
+		right: 20px;
+		display: block;
+		width: 20px;
+		line-height: 20px;
+		text-align: center;
+		background-color: #ddd;
+		text-decoration: none;
+		font-weight: bold;
+		color: #999;
+		font-size: 1.2em;
+	}
+	
+	a.close:hover
+	{
+		background-color:#999;
+		color:#fff;
+	}
+
+	#lightboxes .ie-bg 
+	{
+		background: #000;
+		position: absolute;
+		width: 100%;
+		height: 3000px;
+		filter: alpha(opacity=75);
+	}
+}

@@ -1,0 +1,14 @@
+/**
+* HasLayout
+*
+* Gives the element has-layout in IE. By switching to inline-block
+* it will make the element haslayout, then we just switch it back.
+* Alternatives are: zoom:1; overflow:anything; (IE7+), float, position:absolute;
+*
+* @see http://www.satzansatz.de/cssd/onhavinglayout.html
+* @type Mixin
+*/
+=has-layout
+{
+	zoom:1;
+}

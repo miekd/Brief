@@ -1,0 +1,19 @@
+/**
+ * 960.gs Grid
+ *
+ * The grid creates a 960.gs style grid, with 60px columns and 10px
+ * gutters on either side of the columns
+ *
+ * Note: This doesn't create the same classes used in 960.gs. It
+ * just creates the same grid
+ */
+
+@grid
+{
+	column-width:60;
+	column-count:12;
+	left-gutter-width:10;
+	right-gutter-width:10;
+	baseline:18;
+	unit:px;
+}

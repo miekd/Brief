@@ -1,0 +1,54 @@
+/**
+ * Easily position an element around
+ * Thanks to Jazen's Compass plugin for these
+ */
+=position(!mode = "absolute", !top = false, !right = false, !bottom = false, !left = false)
+{
+	position:!mode;
+	
+	@if(!top != false) 		{ top:!top; }
+	@if(!left != false) 	{ left:!left; }
+	@if(!right != false) 	{ right:!right; }
+	@if(!bottom != false)	{ bottom:!bottom; }
+}
+
+=absolute(!top = false, !right = false, !bottom = false, !left = false)
+{
+	+position("absolute", !top, !right, !bottom, !left);
+}
+
+=relative(!top = false, !right = false, !bottom = false, !left = false)
+{
+	+position("relative", !top, !right, !bottom, !left);
+}
+
+=move(!top = false, !right = false, !bottom = false, !left = false)
+{
+	+relative(!top, !right, !bottom, !left);
+}
+
+=move-up(!up = 0)
+{
+	+move(-!up);
+}
+
+=move-right(!right = 0)
+{
+	+move(false, -!right);
+}
+
+=move-down(!down = 0)
+{
+	+move(false, false, -!down);
+}
+
+=move-left(!left = 0)
+{
+	+move(false, false, false, -!left);
+}
+
+=size(!width, !height)
+{
+	width:!width;
+	height:!height;
+}

@@ -1,0 +1,36 @@
+/**
+* Quick Clearfix
+*
+* Clears an element of its floated children. The quick way.
+*
+* @type Mixin
+*/
+=quick-clearfix
+{
+	+has-layout; /* For IE6, the overflow is enough for IE7+ */
+	overflow:hidden;
+}
+
+/**
+* Clearfix
+*
+* Clears an element of its floated children.
+*
+* @type Mixin
+*/
+=clearfix
+{
+	+has-layout;
+	display:block;
+	
+	&:after 
+	{
+		content:'\\0020';
+		display:block;
+		height:0;
+		clear:both;
+		visibility:hidden;
+		overflow:hidden;
+		font-size:0;
+	}
+}

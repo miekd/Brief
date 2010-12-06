@@ -1,0 +1,108 @@
+/**
+* Reset
+*
+* Reset an elements margin and padding so it's
+* easier to style.
+*
+* @type Mixin
+*/
+=reset
+{
+	margin:0;
+	padding:0;
+}
+
+/**
+* Reset Box
+*
+* Resets the entire box model for the element
+*
+* @type Mixin
+*/
+=reset-box-model
+{
+	margin:0;
+	padding:0;
+	border:0;
+}
+
+/**
+* Reset all
+*
+* A more detailed reset, covering most properties
+*
+* @type Mixin
+*/
+=reset-all
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	background: none;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+
+=global-reset
+{ 
+	html, body, div, span, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote,
+	pre,a, abbr, acronym, address, code,del, dfn, em, img, q, dl, dt, dd, ol, ul,
+	li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td
+	{
+		+high-quality;
+		+reset-all;
+	}
+	
+	table
+	{
+		border-collapse: separate;
+		border-spacing: 0;
+	}
+	
+	caption, th, td
+	{
+		text-align: left;
+		font-weight: normal;
+	}
+	
+	table, td, th
+	{
+		vertical-align: middle;
+	}
+	
+	blockquote:before, blockquote:after, q:before, q:after
+	{
+		content: "";
+	}
+	
+	blockquote, q
+	{
+		quotes: "" "";
+	}
+	
+	a img {border:none;}
+	img { +high-quality; }
+	 
+	pre,
+	code,
+	kbd,
+	samp,
+	var,
+	output
+	{
+		white-space:pre;
+	}
+	
+	mark
+	{
+		background:#ffffd9;
+	}
+	 
+	nav, section, article, header, aside, footer, figure, dialog { display:block; }
+	time, progress, mark, output { display:inline; }
+
+}
+

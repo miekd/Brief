@@ -1,0 +1,234 @@
+/*
+	-------------
+	CSS Base File
+	-------------
+	Contains many resets, browser fixes and defaults to make life a bit easier.
+	Inspired by the likes of Eric Meyer et al.
+	
+	
+	Version:	1.8 (a.k.a. Green II)
+	Created:	October 13th, 2010
+	Author:		Maykel Loomans - www.maykelloomans.com
+	
+	
+	Changes:	
+	 Since 1.0	Font-shorthand for basic fonts.
+	 Since 1.1	Added input[type=image], input.image
+	 Since 1.2	Added input[type=radio], input.radio
+	 Since 1.3  Added ::moz-focus-inner to the input[type=submit], input.submit
+	 Since 1.4  Added display: block; HTML5 elements: article, section, header, footer, nav
+	 Since 1.5	Removed accessibility selectors, added -moz-focus-inner.
+	 Since 1.6	Added some form basics.
+	 Since 1.7	Updated inputs. Removed some stupid selectors.
+	 Since 1.8	Updated basic font-stack. Added some things from HTML Boiler Plate.
+
+	-------------
+*/
+
+
+/* @group - Reset */
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, figure, footer, header, 
+hgroup, menu, nav, section, menu,
+time, mark, audio, video {
+	margin:			0;
+	padding:		0;
+	border:			0;
+	outline:		0;
+	font-size:		100%;
+	
+	vertical-align:	baseline;
+	background:		transparent;
+}
+
+	/* @group - HTML5 Elements */
+	
+	article, aside, figure, footer, header, hgroup, nav, section { 
+		display:block; 
+	}
+	
+	/* @end */
+
+
+/* @end */
+
+
+
+/* @group - Defaults */
+
+:focus { outline: 0; } /* Remember to define focus styles! */
+
+html { -webkit-font-smoothing: antialiased; }
+html, body { height: 100%; }
+body { background: #fff; } /* Putting on pants. */
+
+a img, fieldset { border: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: ""; }
+blockquote, q { quotes: "" ""; } /* Remove possible quote marks (") from <q>, <blockquote>. */
+
+ul, ol { list-style: none; } /* Lists are flexible, define list styles for your site specifically. */
+	
+table { border-collapse: separate; border-spacing: 0; } /* Tables still need 'cellspacing="0"' in the markup. */
+caption, th, td { text-align: left; font-weight: normal; }
+table, td, th { vertical-align: middle; }
+	
+
+	/* @group - Input Fields */
+	
+	input, select, button, textarea {
+		display: inline-block;
+		vertical-align:	middle;
+		white-space: normal;
+		background:	#fff;
+		line-height: 1;
+		
+		margin: 0;
+		padding: 0;
+		border: 0;
+	}
+	
+	input[type=submit], input.submit { 
+		font-weight:bold; 
+		width: auto !important;
+	}
+	
+	input[type=submit]::-moz-focus-inner,
+	input[type=reset]::-moz-focus-inner { border: 0; }
+	
+	input[type=image], input.image,
+	input[type=radio], input.radio,
+	input[type=checkbox], input.checkbox {
+		background:none !important;
+		border:none !important;
+		height:auto !important;
+		width:auto !important;
+	}
+	
+	/* @end */
+
+	/* @group Image Defaults */
+	
+	h1 img, h2 img, h3 img, h4 img, h5 img, h6 img { margin: 0; }
+	
+	img.left {
+		margin: 4px 20px 4px 4px;
+		
+		display:inline;
+		float:left !important;
+	}
+	
+	img.right {
+		margin: 4px 4px 4px 20px;
+		
+		display:inline;
+		float:right !important;
+	}
+	
+	/* @end */
+
+/* @end */
+
+
+
+/* @group - Defaults (Typo) */
+
+	/* @group Default Font */
+	
+	body { font: 62.5%/20px sans-serif; color: #222; } /* Resetting the body font for no current reason whatsoever. Let's put it towards 'peace of mind' */
+	input, textarea, button, select { font: 99% sans-serif; }
+	pre,code,tt,kbd,samp { font-family: 'andale mono', 'lucida console', monospace;}
+	
+	/* @end */ 
+
+a			   		{ color: #009; text-decoration: underline; }
+a:visited			{ color: #006; }
+a:focus, a:hover	{ color: #000; }
+
+del { text-decoration: line-through; }
+pre,code    { white-space: pre; }
+
+sup, sub	{ line-height: 0; }
+strong { font-weight: bold; }
+
+/* @end */
+
+
+
+/* @group - Browser Specifics */
+
+input::-moz-focus-inner, 
+button::-moz-focus-inner { 
+	border: 0;
+	padding: 0;
+}
+
+/* @end */
+
+
+
+/* @group - Clearing Hacks */
+
+.clear:after {
+	clear:both;
+	content:".";
+	display:block;
+	height:0;
+	visibility:hidden;
+	font-size: 0.01em !important;
+	line-height: 0.01em !important;
+}
+
+.clear { display: inline-block; }
+* html .clear { height:1%; }
+.clear { display:block; }
+
+/* @end */
+
+
+/* @group Custom Stuff */
+
+	/* @group Horizontal Rules */
+	
+	.hr {
+		border-bottom:1px solid #ffeae0;
+		clear:both !important;
+		font-size:0.01em !important;
+		height:1px !important;
+		width:100%;
+		margin:3px 0 !important;
+		padding:1px 0;
+	}
+	
+	.hr hr { display: none !important; }
+	
+	/* @end */
+	
+	
+	
+	/* @group Visibility Switches */
+	
+	.hide { display: none !important; }
+	.show { display: block !important; }
+	
+	.invisible { visibility: hidden !important; }
+	.visible { visibility: visible !important; }
+	
+	/* @end */
+
+	
+/* @end */
+
+
+@media screen and (max-device-width: 480px) {
+  /* Prevent iOS, WinMobile from adjusting font size */
+  html { -webkit-text-size-adjust:none; -ms-text-size-adjust:none; } 
+}
