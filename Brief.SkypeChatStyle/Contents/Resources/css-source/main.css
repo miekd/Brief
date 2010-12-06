@@ -1011,7 +1011,7 @@ button.decline {
 	.typing .container {
 		position: relative;
 	
-		padding: 4px 0 1px;
+		padding: 3px 0 2px;
 		margin: 6px;
 		
 		height: 20px;
@@ -1162,7 +1162,7 @@ button.decline {
 			}
 			
 			.body {
-				padding-top: 0px;
+				padding-top: 1px;
 				padding-right: 80px;
 				-webkit-box-flex: 1;
 			}
