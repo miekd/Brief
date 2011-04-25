@@ -1,0 +1,110 @@
+@mixin opacity($opacity = 1)
+{
+	opacity: $opacity;
+	-moz-opacity: $opacity;
+	-khtml-opacity: $opacity;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=#{$opacity*100})";
+	filter: alpha(opacity=#{$opacity*100});
+}
+
+
+
+@mixin border-radius($radius)
+{
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	-khtml-border-radius: $radius;
+	border-radius: $radius;
+}
+
+	@mixin border-top-left-radius($radius)
+	{
+		-webkit-border-top-left-radius: $radius;
+		-moz-border-radius-topleft: $radius;
+		-khtml-border-top-left-radius: $radius;
+		border-top-left-radius: $radius;
+	}
+	
+	@mixin border-top-right-radius($radius)
+	{
+		-webkit-border-top-right-radius: $radius;
+		-moz-border-radius-topright: $radius;
+		-khtml-border-top-right-radius: $radius;
+		border-top-right-radius: $radius;
+	}
+	
+	@mixin border-bottom-left-radius($radius)
+	{
+		-webkit-border-bottom-left-radius: $radius;
+		-moz-border-radius-bottomleft: $radius;
+		-khtml-border-bottom-left-radius: $radius;
+		border-bottom-left-radius: $radius;
+	}
+	
+	@mixin border-bottom-right-radius($radius)
+	{
+		-webkit-border-bottom-right-radius: $radius;
+		-moz-border-radius-bottomright: $radius;
+		-khtml-border-bottom-right-radius: $radius;
+		border-bottom-right-radius: $radius;
+	}
+
+
+
+@mixin box-shadow($value, $value2 = "", $value3 = "", $value4 = "", $value5 = "", $value6 = "")
+{
+	@if $value2 != "" {		$value: $value + ", " + $value2; 	}
+	@if $value3 != "" {		$value: $value + ", " + $value3; 	}
+	@if $value4 != "" {		$value: $value + ", " + $value4; 	}
+	@if $value5 != "" {		$value: $value + ", " + $value5; 	}
+	@if $value6 != "" {		$value: $value + ", " + $value6; 	}
+
+	-webkit-box-shadow: $value;
+	-moz-box-shadow: $value;
+	-o-box-shadow: $value;
+	box-shadow: $value;
+}
+
+
+
+@mixin display-box()
+{
+	display: -webkit-box;
+	display: -moz-box;
+	display: box;
+}
+
+	@mixin box-orient($value)
+	{
+		-webkit-box-orient: $value;
+		-moz-box-orient: $value;
+		box-orient: $value;
+	}
+	
+	@mixin box-flex($value)
+	{
+		-webkit-box-flex: $value;
+		-moz-box-flex: $value;
+		box-flex: $value;
+	}
+
+
+// Clearfix Micro
+	
+@mixin cf()
+{
+	&:before,
+	&:after {
+	    content:"";
+	    display:block;
+	    overflow:hidden;
+	}
+	
+	&:after {
+	    clear:both;
+	}
+	
+	& {
+	    zoom:1;
+	}
+}
