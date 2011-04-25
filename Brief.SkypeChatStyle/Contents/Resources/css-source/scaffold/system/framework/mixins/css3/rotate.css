@@ -1,9 +1,0 @@
-/**
- * Rotate an element 90, 180 or 270 degrees
- */
-=rotate(!angle)
-{
-	-webkit-transform: rotate(#[!angle]deg);
-	-moz-transform: rotate(#[!angle]deg);
-	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=#[90 / !angle]);
-}
