@@ -397,7 +397,7 @@ SCS.Conversation = function() {
      * @private
      */
     this._nearBottom = function() {
-        return (document.body.scrollTop+window.innerHeight >= document.body.offsetHeight-75);
+        return (document.body.scrollTop+window.innerHeight >= document.body.scrollHeight-75);
     };
     
     /**
