@@ -1,4 +1,4 @@
-@mixin opacity($opacity = 1)
+@mixin opacity($opacity: 1)
 {
 	opacity: $opacity;
 	-moz-opacity: $opacity;
@@ -24,7 +24,7 @@
 		-khtml-border-top-left-radius: $radius;
 		border-top-left-radius: $radius;
 	}
-	
+
 	@mixin border-top-right-radius($radius)
 	{
 		-webkit-border-top-right-radius: $radius;
@@ -32,7 +32,7 @@
 		-khtml-border-top-right-radius: $radius;
 		border-top-right-radius: $radius;
 	}
-	
+
 	@mixin border-bottom-left-radius($radius)
 	{
 		-webkit-border-bottom-left-radius: $radius;
@@ -40,7 +40,7 @@
 		-khtml-border-bottom-left-radius: $radius;
 		border-bottom-left-radius: $radius;
 	}
-	
+
 	@mixin border-bottom-right-radius($radius)
 	{
 		-webkit-border-bottom-right-radius: $radius;
@@ -51,7 +51,7 @@
 
 
 
-@mixin box-shadow($value, $value2 = "", $value3 = "", $value4 = "", $value5 = "", $value6 = "")
+@mixin box-shadow($value, $value2: "", $value3: "", $value4: "", $value5: "", $value6: "")
 {
 	@if $value2 != "" {		$value: $value + ", " + $value2; 	}
 	@if $value3 != "" {		$value: $value + ", " + $value3; 	}
@@ -80,7 +80,7 @@
 		-moz-box-orient: $value;
 		box-orient: $value;
 	}
-	
+
 	@mixin box-flex($value)
 	{
 		-webkit-box-flex: $value;
@@ -90,7 +90,7 @@
 
 
 // Clearfix Micro
-	
+
 @mixin cf()
 {
 	&:before,
@@ -99,11 +99,11 @@
 	    display:block;
 	    overflow:hidden;
 	}
-	
+
 	&:after {
 	    clear:both;
 	}
-	
+
 	& {
 	    zoom:1;
 	}
