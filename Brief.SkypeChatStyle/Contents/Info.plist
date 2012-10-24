@@ -5,17 +5,17 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>English</string>
 	<key>CFBundleGetInfoString</key>
-	<string>Panamericana Chat Style</string>
+	<string>Brief Chat Style</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.skype.skype.panamericana.style</string>
+	<string>com.skype.skype.brief.style</string>
 	<key>CFBundleInfoDictionaryVersion</key>
-	<string>1.0</string>
+	<string>1.5.2</string>
 	<key>CFBundleName</key>
-	<string>Panamericana</string>
+	<string>Brief</string>
 	<key>CFBundlePackageType</key>
 	<string>SKP1</string>
 	<key>CFBundleVersion</key>
-	<string>1.0</string>
+	<string>1.5.2</string>
 	<key>DefaultFontFamily</key>
 	<string>Helvetica Neue Light</string>
 	<key>DefaultFontSize</key>
@@ -23,7 +23,7 @@
 	<key>DisableCustomBackground</key>
 	<true/>
 	<key>MessageViewVersion</key>
-	<integer>6</integer>
+	<integer>7</integer>
 	<key>ShowsUserIcons</key>
 	<true/>
 	<key>FormattedCopyCompatible</key>
