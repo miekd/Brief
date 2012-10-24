@@ -9,13 +9,13 @@
 	<key>CFBundleIdentifier</key>
 	<string>com.skype.skype.brief.style</string>
 	<key>CFBundleInfoDictionaryVersion</key>
-	<string>1.5.2</string>
+	<string>1.6</string>
 	<key>CFBundleName</key>
 	<string>Brief</string>
 	<key>CFBundlePackageType</key>
 	<string>SKP1</string>
 	<key>CFBundleVersion</key>
-	<string>1.5.2</string>
+	<string>1.6</string>
 	<key>DefaultFontFamily</key>
 	<string>Helvetica Neue Light</string>
 	<key>DefaultFontSize</key>
