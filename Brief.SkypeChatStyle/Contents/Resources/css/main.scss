@@ -332,8 +332,6 @@ button:not(.pill) {
 		}
 
 
-
-
 .played,
 .duration {
 	font-size: 11px;
@@ -991,7 +989,6 @@ body {
 }
 
 
-
 .transfer {
 	&.out .completed .name {
 		width: 280px;
@@ -1319,4 +1316,58 @@ body {
 		}
 	}
 
+}
+
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5) {
+	.quicklook:after {
+		background-image: url(../gfx/icon_quicklook@2x.png);
+		background-size: 30px 30px;
+	}
+
+	.reveal:after {
+		background-image: url(../gfx/icon_reveal@2x.png);
+		background-size: 30px 30px;
+	}
+
+	.delete:after,
+	.cancel:after {
+		background-image: url(../gfx/icon_cancel@2x.png);
+		background-size: 30px 30px;
+	}
+
+	.edit:after {
+		background-image: url(../gfx/icon_edit@2x.png);
+		background-size: 30px 30px;
+	}
+
+	.play:after {
+		background-image: url(../gfx/icon_play@2x.png);
+		background-size: 30px 30px;
+	}
+
+	.pause:after {
+		background-image: url(../gfx/icon_pause@2x.png);
+		background-size: 30px 30px;
+	}
+
+	.stop:after {
+		background-image: url(../gfx/icon_stop@2x.png);
+		background-size: 30px 30px;
+	}
+
+	.sub:before {
+		background-image: url(../gfx/icon_sub@2x.png);
+		background-size: 30px 30px;
+	}
+
+	.instance:not(:last-child) img[src*="multiple"] ~ .name {
+		background-image: url(../gfx/icon_arrow_right@2x.png);
+		background-size: 30px 30px;
+	}
+
+	.instance:not(:last-child) img[src*="multiple"] ~ .name.open {
+		background-image: url(../gfx/icon_arrow_down@2x.png);
+		background-size: 30px 30px;
+	}
 }
