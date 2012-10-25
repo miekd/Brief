@@ -5,6 +5,7 @@ span.emoticon {
     overflow: hidden;
     color: transparent;
     background-position: 0 0px;
+    background-size: 20px auto;
     background-repeat: no-repeat;
     background-color: transparent;
     vertical-align: bottom;
@@ -14,6 +15,7 @@ span.emoticon {
     position: relative;
     top: -5px;
 }
+
 
 /* STATIC */
 
@@ -486,6 +488,8 @@ span.emoticon {
         background-image: url(skcg:emoticon?type=tauri);
         background-position-y: -1060px;
     }
+
+
 
 
 /* 30x30px emoticons */
