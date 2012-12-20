@@ -1,10 +1,10 @@
 # How to install a custom SkypeChatStyle
 
-1. Go to your home folder `~/Library/Application\ Support/Skype/`
+1. Go to your home folder `~/Library/Application Support/Skype/`
 2. Create a folder called `ChatStyles` if it doesn’t exist.
 3. Drag the `.SkypeChatStyle` into this folder
 4. Restart Skype.
-5. Go to Skype Preferences and choose Skype Simple in the Style dropdown in the Chat section.
+5. Go to Skype Preferences and choose Brief in the Style dropdown in the Messaging section.
 
 **Related Webpages:**
 
