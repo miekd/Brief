@@ -27,7 +27,7 @@
 	<key>ShowsUserIcons</key>
 	<true/>
 	<key>FormattedCopyCompatible</key>
-	<false/>
+	<true/>
 	<key>SupportsStoredRender</key>
 	<false/>
 </dict>
