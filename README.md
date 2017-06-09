@@ -1,3 +1,7 @@
+# This project is deprecated.
+
+---
+
 # How to install a custom SkypeChatStyle
 *NOTE:* This will not work in Skype version 6.4 or above. Chat styles have been removed.
 
